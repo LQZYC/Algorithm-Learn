@@ -16,6 +16,9 @@ public class MaximumWindowNumber {
     }
 
     private static List<Integer> getMaxWindowNumber(List<Integer> exampleList, int windowSize) {
+        if (exampleList == null || windowSize > exampleList.size() || windowSize < 1) {
+            return null;
+        }
         LinkedList<Integer> linkedList = new LinkedList<>();
         List<Integer> resultList = new ArrayList<>();
         for (int i = 0; i < exampleList.size(); i++) {

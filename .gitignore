@@ -1,3 +1,6 @@
 .idea
 *.iml
 out
+recursive/src/main/java/maxtree/
+recursive/src/main/resources/
+recursive/target/
